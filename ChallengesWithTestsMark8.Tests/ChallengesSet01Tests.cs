@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ChallengesWithTestsMark8.Tests
 {
-    public class ChallengesSet01Tests
+    public class ChallengesSet01Tests //Dont touch the test pages!
     {
         [Theory]
         [InlineData(1, 1, true)]

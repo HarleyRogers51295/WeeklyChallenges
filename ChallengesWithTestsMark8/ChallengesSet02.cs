@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace ChallengesWithTestsMark8
@@ -7,22 +8,52 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
+            return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            throw new NotImplementedException();
+            int count = 0;
+            for (int i = 1; i <= vals.Length; i++)
+            {
+                count++;
+            }
+            if (count % 2 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+            
         }
 
         public bool IsNumberEven(int number)
         {
-            throw new NotImplementedException();
+
+            if (number % 2 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
         public bool IsNumberOdd(int num)
         {
-            throw new NotImplementedException();
+            if (num % 2 != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
